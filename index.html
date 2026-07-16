@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Excellence Academy — industry-focused IT courses, expert trainers, practical projects, and career guidance." />
+  <meta name="keywords" content="Excellence Academy, IT courses, web development, Python, Java, database, AI, UI UX" />
+  <meta name="theme-color" content="#3d326a" />
+  <title>Excellence Academy | Gateway to Success</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Excellence Academy home">
+        <img src="assets/excellence-academy-logo.png" alt="Excellence Academy logo" />
+        <span>
+          <strong>Excellence Academy</strong>
+          <small>Gateway to Success</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel" id="navPanel">
+        <div class="nav-links">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#roadmaps">Roadmaps</a>
+          <a href="#trainers">Trainers</a>
+          <a href="#feedback">Feedback</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">
+          <i class="fa-solid fa-sun"></i>
+          <span class="toggle-track"><span class="toggle-knob"></span></span>
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-orb orb-one" aria-hidden="true"></div>
+      <div class="hero-orb orb-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Future-ready technology education</div>
+          <h1>Empowering Future <span>IT Professionals</span></h1>
+          <p>Master modern technologies with industry-focused courses, expert trainers, and practical learning experiences at Excellence Academy.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#courses">Explore Courses <i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-ghost" href="#contact"><i class="fa-solid fa-graduation-cap"></i> Join Now</a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="avatar-stack" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=96&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=96&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=96&q=80" alt="" />
+              <span>+2K</span>
+            </div>
+            <div>
+              <div class="stars" aria-label="Five star rating">★★★★★</div>
+              <small>Trusted by ambitious learners</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="visual-shell tilt-card">
+            <div class="visual-topbar">
+              <span></span><span></span><span></span>
+              <small>learning_dashboard.js</small>
+            </div>
+
+            <div class="code-window">
+              <div class="line"><span class="code-purple">const</span> future = <span class="code-gold">"yours"</span>;</div>
+              <div class="line"><span class="code-purple">function</span> buildCareer(skills) {</div>
+              <div class="line indent">return skills.map(<span class="code-blue">learn</span>);</div>
+              <div class="line">}</div>
+              <div class="line"><span class="code-muted">// Learn. Build. Succeed.</span></div>
+            </div>
+
+            <div class="progress-card">
+              <div>
+                <span>Career Readiness</span>
+                <strong>92%</strong>
+              </div>
+              <div class="progress-track"><span></span></div>
+            </div>
+
+            <div class="mini-grid">
+              <article><i class="fa-solid fa-code"></i><span>Practical Labs</span></article>
+              <article><i class="fa-solid fa-diagram-project"></i><span>Live Projects</span></article>
+              <article><i class="fa-solid fa-briefcase"></i><span>Career Support</span></article>
+            </div>
+          </div>
+
+          <div class="tech-bubble html"><i class="fa-brands fa-html5"></i></div>
+          <div class="tech-bubble css"><i class="fa-brands fa-css3-alt"></i></div>
+          <div class="tech-bubble js"><i class="fa-brands fa-js"></i></div>
+          <div class="tech-bubble python"><i class="fa-brands fa-python"></i></div>
+          <div class="tech-bubble react"><i class="fa-brands fa-react"></i></div>
+          <div class="tech-bubble database"><i class="fa-solid fa-database"></i></div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <section class="brand-strip">
+      <div class="container brand-strip-inner">
+        <span>Learn with tools used by modern teams</span>
+        <div class="tech-marquee">
+          <div class="marquee-track">
+            <b><i class="fa-brands fa-html5"></i> HTML5</b>
+            <b><i class="fa-brands fa-css3-alt"></i> CSS3</b>
+            <b><i class="fa-brands fa-js"></i> JavaScript</b>
+            <b><i class="fa-brands fa-python"></i> Python</b>
+            <b><i class="fa-brands fa-java"></i> Java</b>
+            <b><i class="fa-brands fa-react"></i> React</b>
+            <b><i class="fa-brands fa-node-js"></i> Node.js</b>
+            <b><i class="fa-solid fa-database"></i> MySQL</b>
+            <b><i class="fa-brands fa-git-alt"></i> Git</b>
+            <b><i class="fa-solid fa-robot"></i> AI Tools</b>
+            <b><i class="fa-brands fa-html5"></i> HTML5</b>
+            <b><i class="fa-brands fa-css3-alt"></i> CSS3</b>
+            <b><i class="fa-brands fa-js"></i> JavaScript</b>
+            <b><i class="fa-brands fa-python"></i> Python</b>
+            <b><i class="fa-brands fa-java"></i> Java</b>
+            <b><i class="fa-brands fa-react"></i> React</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal">
+          <div class="image-card main-image">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85" alt="Students learning together in a modern classroom" />
+          </div>
+          <div class="experience-badge">
+            <strong>Learn by doing</strong>
+            <span>Projects • Labs • Mentoring</span>
+          </div>
+          <div class="floating-stat">
+            <i class="fa-solid fa-chart-line"></i>
+            <span><strong>98%</strong> satisfaction</span>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <div class="section-kicker">About Excellence Academy</div>
+          <h2>Skills that turn ambition into <span>real opportunity</span></h2>
+          <p>Excellence Academy is built for learners who want practical, career-focused technology education. Our programs combine clear fundamentals, guided practice, modern tools, and portfolio-ready projects.</p>
+
+          <div class="info-cards">
+            <article>
+              <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+              <div><h3>Practical learning</h3><p>Apply every concept through coding labs, assignments, and real-world projects.</p></div>
+            </article>
+            <article>
+              <div class="icon-box"><i class="fa-solid fa-user-tie"></i></div>
+              <div><h3>Expert mentoring</h3><p>Learn with experienced trainers who explain clearly and guide your progress.</p></div>
+            </article>
+            <article>
+              <div class="icon-box"><i class="fa-solid fa-route"></i></div>
+              <div><h3>Career direction</h3><p>Follow structured learning roadmaps designed to build job-ready confidence.</p></div>
+            </article>
+          </div>
+
+          <a class="text-link" href="#why">Discover why students choose us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vision-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Our purpose</div>
+          <h2>A clear vision. A practical mission.</h2>
+          <p>Technology education that is accessible, relevant, and focused on meaningful student outcomes.</p>
+        </div>
+
+        <div class="vision-grid">
+          <article class="glass-card reveal tilt-card">
+            <div class="card-number">01</div>
+            <div class="icon-box large"><i class="fa-solid fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>To become a leading IT education provider by empowering students with modern technology skills and innovative learning methods.</p>
+          </article>
+          <article class="glass-card reveal tilt-card">
+            <div class="card-number">02</div>
+            <div class="icon-box large"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality IT education through practical training, experienced instructors, and industry-relevant courses.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses" id="courses">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <div class="section-kicker">Professional courses</div>
+            <h2>Choose a pathway. Build your future.</h2>
+          </div>
+          <p>Start with the fundamentals, practise with expert guidance, and graduate with demonstrable skills.</p>
+        </div>
+
+        <div class="course-filter reveal" role="tablist" aria-label="Course category filters">
+          <button class="active" data-filter="all">All Courses</button>
+          <button data-filter="development">Development</button>
+          <button data-filter="data">Data & AI</button>
+          <button data-filter="design">Design</button>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card reveal" data-category="development">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="Web development workspace" />
+              <span class="course-level">Beginner–Advanced</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Web Development</h3>
+              <p>Create fast, responsive websites and full-stack applications using modern development workflows.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 6 months</span><span><i class="fa-solid fa-layer-group"></i> 6 modules</span></div>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="development data">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Python programming on a computer" />
+              <span class="course-level">Beginner Friendly</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-brands fa-python"></i></div>
+              <h3>Python Programming</h3>
+              <p>Learn Python fundamentals, automation, data processing, application development, and AI programming.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 5 months</span><span><i class="fa-solid fa-layer-group"></i> 5 modules</span></div>
+              <div class="tags"><span>Python</span><span>Automation</span><span>Data</span><span>AI</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="development">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="Software engineer coding" />
+              <span class="course-level">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-brands fa-java"></i></div>
+              <h3>Java Development</h3>
+              <p>Build strong object-oriented foundations and enterprise-ready backend applications with Java and Spring.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 6 months</span><span><i class="fa-solid fa-layer-group"></i> 5 modules</span></div>
+              <div class="tags"><span>Java</span><span>OOP</span><span>Spring</span><span>Backend</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="data">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80" alt="Database and server infrastructure" />
+              <span class="course-level">Beginner–Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-solid fa-database"></i></div>
+              <h3>Database Management</h3>
+              <p>Design reliable databases, write effective SQL queries, and manage structured data confidently.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 4 months</span><span><i class="fa-solid fa-layer-group"></i> 4 modules</span></div>
+              <div class="tags"><span>MySQL</span><span>SQL</span><span>Design</span><span>Data</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="development design">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=900&q=80" alt="Mobile application design and development" />
+              <span class="course-level">Intermediate</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Mobile App Development</h3>
+              <p>Create polished cross-platform mobile applications with modern interfaces and scalable architecture.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 6 months</span><span><i class="fa-solid fa-layer-group"></i> 4 modules</span></div>
+              <div class="tags"><span>Android</span><span>Flutter</span><span>Mobile UI</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="design">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&q=80" alt="UI UX designer working on interface screens" />
+              <span class="course-level">Beginner Friendly</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>UI/UX Design</h3>
+              <p>Research users, create wireframes, build prototypes, and design intuitive digital experiences.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 4 months</span><span><i class="fa-solid fa-layer-group"></i> 4 modules</span></div>
+              <div class="tags"><span>Research</span><span>Figma</span><span>Prototype</span><span>Systems</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="course-card reveal" data-category="data">
+            <div class="course-image">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80" alt="Artificial intelligence visualization" />
+              <span class="course-level">Intermediate–Advanced</span>
+            </div>
+            <div class="course-body">
+              <div class="course-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>AI & Machine Learning</h3>
+              <p>Explore machine learning concepts, data analysis, intelligent systems, and practical AI workflows.</p>
+              <div class="course-meta"><span><i class="fa-regular fa-clock"></i> 6 months</span><span><i class="fa-solid fa-layer-group"></i> 5 modules</span></div>
+              <div class="tags"><span>Machine Learning</span><span>AI</span><span>Data Analysis</span></div>
+              <a href="#contact">View Course <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmaps" id="roadmaps">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Learning roadmaps</div>
+          <h2>See every step before you begin</h2>
+          <p>Structured progression helps you focus on the right skills in the right order.</p>
+        </div>
+
+        <div class="roadmap-shell reveal">
+          <div class="roadmap-tabs" role="tablist">
+            <button class="active" data-roadmap="web"><i class="fa-solid fa-globe"></i> Web Development</button>
+            <button data-roadmap="python"><i class="fa-brands fa-python"></i> Python</button>
+            <button data-roadmap="java"><i class="fa-brands fa-java"></i> Java</button>
+          </div>
+
+          <div class="roadmap-panel active" id="roadmap-web">
+            <div class="roadmap-line"></div>
+            <div class="roadmap-step"><span>01</span><strong>Beginner Fundamentals</strong><small>Understand the web</small></div>
+            <div class="roadmap-step"><span>02</span><strong>HTML & CSS</strong><small>Build structured interfaces</small></div>
+            <div class="roadmap-step"><span>03</span><strong>JavaScript</strong><small>Add logic and interaction</small></div>
+            <div class="roadmap-step"><span>04</span><strong>Frontend Frameworks</strong><small>Build scalable user interfaces</small></div>
+            <div class="roadmap-step"><span>05</span><strong>Backend + Database</strong><small>Create complete applications</small></div>
+            <div class="roadmap-step"><span>06</span><strong>Full Stack Developer</strong><small>Launch portfolio projects</small></div>
+          </div>
+
+          <div class="roadmap-panel" id="roadmap-python">
+            <div class="roadmap-line"></div>
+            <div class="roadmap-step"><span>01</span><strong>Python Basics</strong><small>Syntax and data types</small></div>
+            <div class="roadmap-step"><span>02</span><strong>Programming Logic</strong><small>Functions and problem solving</small></div>
+            <div class="roadmap-step"><span>03</span><strong>Automation</strong><small>Build useful scripts</small></div>
+            <div class="roadmap-step"><span>04</span><strong>Data Science</strong><small>Analyse and visualise data</small></div>
+            <div class="roadmap-step"><span>05</span><strong>AI Development</strong><small>Create intelligent solutions</small></div>
+          </div>
+
+          <div class="roadmap-panel" id="roadmap-java">
+            <div class="roadmap-line"></div>
+            <div class="roadmap-step"><span>01</span><strong>Java Basics</strong><small>Syntax and core APIs</small></div>
+            <div class="roadmap-step"><span>02</span><strong>OOP Concepts</strong><small>Classes and architecture</small></div>
+            <div class="roadmap-step"><span>03</span><strong>Advanced Java</strong><small>Collections and concurrency</small></div>
+            <div class="roadmap-step"><span>04</span><strong>Spring Framework</strong><small>Professional backend systems</small></div>
+            <div class="roadmap-step"><span>05</span><strong>Enterprise Applications</strong><small>Build production-ready projects</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <div class="section-kicker">Why choose us</div>
+            <h2>More than lessons. A complete learning experience.</h2>
+          </div>
+          <p>Everything is designed to move you from curiosity to confidence through practical support and structured progress.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal"><i class="fa-solid fa-industry"></i><h3>Industry-focused curriculum</h3><p>Learn current tools, workflows, and professional practices.</p></article>
+          <article class="feature-card reveal"><i class="fa-solid fa-chalkboard-user"></i><h3>Experienced trainers</h3><p>Receive clear explanations, feedback, and personal guidance.</p></article>
+          <article class="feature-card reveal"><i class="fa-solid fa-diagram-project"></i><h3>Practical projects</h3><p>Build applications and portfolio work that demonstrate your skills.</p></article>
+          <article class="feature-card reveal"><i class="fa-solid fa-computer"></i><h3>Modern computer labs</h3><p>Practise in a focused, professional technology environment.</p></article>
+          <article class="feature-card reveal"><i class="fa-solid fa-compass"></i><h3>Career guidance</h3><p>Get direction on portfolios, interviews, and learning pathways.</p></article>
+          <article class="feature-card reveal"><i class="fa-solid fa-certificate"></i><h3>Recognised certification</h3><p>Celebrate your progress with a professional course certificate.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-sm">
+      <div class="container stats-grid">
+        <article class="stat-card reveal"><i class="fa-solid fa-user-graduate"></i><strong data-count="2500" data-suffix="+">0</strong><span>Students</span></article>
+        <article class="stat-card reveal"><i class="fa-solid fa-person-chalkboard"></i><strong data-count="25" data-suffix="+">0</strong><span>Expert Trainers</span></article>
+        <article class="stat-card reveal"><i class="fa-solid fa-book-open"></i><strong data-count="15" data-suffix="+">0</strong><span>Professional Courses</span></article>
+        <article class="stat-card reveal"><i class="fa-solid fa-heart"></i><strong data-count="98" data-suffix="%">0</strong><span>Student Satisfaction</span></article>
+      </div>
+    </section>
+
+    <section class="section trainers" id="trainers">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Meet the trainers</div>
+          <h2>Learn from professionals who care about your progress</h2>
+          <p>Replace these sample profiles with your academy’s real trainer information.</p>
+        </div>
+
+        <div class="trainer-grid">
+          <article class="trainer-card reveal">
+            <div class="trainer-image"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=700&q=80" alt="Sample software engineering trainer" /></div>
+            <div class="trainer-info"><span>Software Engineering</span><h3>Daniel Perera</h3><p>Full-stack systems, architecture, and practical software projects.</p><div class="trainer-meta"><small>10+ years experience</small><div><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div></div>
+          </article>
+          <article class="trainer-card reveal">
+            <div class="trainer-image"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=80" alt="Sample Python trainer" /></div>
+            <div class="trainer-info"><span>Python & Data</span><h3>Anika Fernando</h3><p>Python development, automation, analytics, and applied AI concepts.</p><div class="trainer-meta"><small>8+ years experience</small><div><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div></div>
+          </article>
+          <article class="trainer-card reveal">
+            <div class="trainer-image"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80" alt="Sample Java trainer" /></div>
+            <div class="trainer-info"><span>Java Development</span><h3>Kavindu Silva</h3><p>Object-oriented programming, Spring, and enterprise backend development.</p><div class="trainer-meta"><small>9+ years experience</small><div><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div></div>
+          </article>
+          <article class="trainer-card reveal">
+            <div class="trainer-image"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=700&q=80" alt="Sample UI UX trainer" /></div>
+            <div class="trainer-info"><span>UI/UX Design</span><h3>Maya Jayasinghe</h3><p>User research, interface design, prototyping, and design systems.</p><div class="trainer-meta"><small>7+ years experience</small><div><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a></div></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feedback" id="feedback">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="section-kicker">Student feedback</div>
+          <h2>Progress stories from our learning community</h2>
+        </div>
+
+        <div class="testimonial-shell reveal">
+          <button class="slider-btn prev" id="testimonialPrev" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+          <div class="testimonial-viewport">
+            <div class="testimonial-track" id="testimonialTrack">
+              <article class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p>The project-based approach helped me understand how a real website is planned and built. I became much more confident presenting my work.</p>
+                <div class="student"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=160&q=80" alt="Sample student portrait" /><div><strong>Nethmi A.</strong><span>Web Development</span></div></div>
+              </article>
+              <article class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p>Python felt difficult before this course. The lessons were clear, and the small exercises helped me improve step by step.</p>
+                <div class="student"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=160&q=80" alt="Sample student portrait" /><div><strong>Ravindu S.</strong><span>Python Programming</span></div></div>
+              </article>
+              <article class="testimonial-card">
+                <div class="quote-icon">“</div>
+                <div class="stars">★★★★★</div>
+                <p>I learned how to turn ideas into wireframes and polished prototypes. The trainer feedback made a big difference to my portfolio.</p>
+                <div class="student"><img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=160&q=80" alt="Sample student portrait" /><div><strong>Shenali D.</strong><span>UI/UX Design</span></div></div>
+              </article>
+            </div>
+          </div>
+          <button class="slider-btn next" id="testimonialNext" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+          <div class="slider-dots" id="testimonialDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section success">
+      <div class="container success-grid">
+        <div class="success-copy reveal">
+          <div class="section-kicker">Student success</div>
+          <h2>Build proof of skill, not just course notes</h2>
+          <p>Students progress through guided assignments, team challenges, and portfolio projects that reflect real technology work.</p>
+          <div class="success-list">
+            <div><i class="fa-solid fa-check"></i><span><strong>Portfolio-ready projects</strong><small>Showcase practical applications and design work.</small></span></div>
+            <div><i class="fa-solid fa-check"></i><span><strong>Professional feedback</strong><small>Improve through trainer reviews and clear next steps.</small></span></div>
+            <div><i class="fa-solid fa-check"></i><span><strong>Career preparation</strong><small>Develop confidence for interviews and opportunities.</small></span></div>
+          </div>
+        </div>
+        <div class="certificate-card reveal tilt-card">
+          <div class="certificate-inner">
+            <img src="assets/excellence-academy-logo.png" alt="Excellence Academy logo" />
+            <small>Certificate of Completion</small>
+            <h3>Excellence Academy</h3>
+            <p>This certifies that</p>
+            <strong>Student Name</strong>
+            <p>has successfully completed the</p>
+            <b>Professional IT Program</b>
+            <div class="certificate-bottom"><span>Verified Achievement</span><i class="fa-solid fa-award"></i></div>
+          </div>
+          <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <div class="section-kicker">Frequently asked questions</div>
+          <h2>Everything you need to know before joining</h2>
+          <p>Can’t find the answer you need? Contact the academy and our team will guide you.</p>
+          <a class="btn btn-primary" href="#contact">Ask a Question</a>
+        </div>
+
+        <div class="accordion reveal">
+          <article class="faq-item open">
+            <button><span>What courses does Excellence Academy offer?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Programs include web development, Python, Java, database management, mobile app development, UI/UX design, AI and machine learning, plus other emerging IT topics.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Are the courses suitable for beginners?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Yes. Beginner pathways start with fundamentals, while intermediate and advanced options support learners with prior experience.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Do students receive certificates?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Students who meet the course completion requirements can receive a professional certificate from Excellence Academy.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Are practical projects included?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Yes. Practical exercises, assignments, and projects are central to the learning experience.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>How can a student register?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Complete the contact form, message the academy through WhatsApp, or contact the admissions team directly.</p></div>
+          </article>
+          <article class="faq-item">
+            <button><span>Are online classes available?</span><i class="fa-solid fa-plus"></i></button>
+            <div class="faq-answer"><p>Update this answer based on your current delivery options, schedules, and available online programs.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <div class="section-kicker">Contact & admissions</div>
+          <h2>Take the next step toward your technology career</h2>
+          <p>Send your details and the admissions team can help you choose the right course and learning pathway.</p>
+
+          <div class="contact-list">
+            <a href="tel:+94786226320"><i class="fa-solid fa-phone"></i><span><small>Phone</small>+94 78 622 6320</span></a>
+            <a href="mailto:excellenceacademyorg@gmail.com"><i class="fa-solid fa-envelope"></i><span><small>Email</small>excellenceacademyorg@gmail.com</span></a>
+            <div><i class="fa-solid fa-location-dot"></i><span><small>Address</small>Trincomalee, Sri Lanka</span></div>
+          </div>
+
+          <div class="social-row">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-heading">
+            <span>Course enquiry</span>
+            <h3>Start your application</h3>
+          </div>
+          <div class="form-row">
+            <label>Full name<input type="text" name="name" placeholder="Your name" required /></label>
+            <label>Email address<input type="email" name="email" placeholder="name@example.com" required /></label>
+          </div>
+          <div class="form-row">
+            <label>Phone number<input type="tel" name="phone" placeholder="+94..." required /></label>
+            <label>Interested course
+              <select name="course" required>
+                <option value="">Select a course</option>
+                <option>Web Development</option>
+                <option>Python Programming</option>
+                <option>Java Development</option>
+                <option>Database Management</option>
+                <option>Mobile App Development</option>
+                <option>UI/UX Design</option>
+                <option>AI & Machine Learning</option>
+              </select>
+            </label>
+          </div>
+          <label>Message<textarea name="message" rows="5" placeholder="Tell us about your learning goals"></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-note" id="formNote">Demo form — connect it to your preferred email or backend service.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="newsletter section-sm">
+      <div class="container newsletter-inner reveal">
+        <div>
+          <span>Stay Updated With New Courses</span>
+          <h2>Receive course news and learning tips</h2>
+        </div>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
+          <button type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#home">
+          <img src="assets/excellence-academy-logo.png" alt="Excellence Academy logo" />
+          <span><strong>Excellence Academy</strong><small>Gateway to Success</small></span>
+        </a>
+        <p>Practical, professional, and future-focused technology education for ambitious learners.</p>
+      </div>
+      <div><h3>Quick Links</h3><a href="#about">About</a><a href="#roadmaps">Roadmaps</a><a href="#trainers">Trainers</a><a href="#faq">FAQ</a></div>
+      <div><h3>Courses</h3><a href="#courses">Web Development</a><a href="#courses">Python Programming</a><a href="#courses">Java Development</a><a href="#courses">AI & Machine Learning</a></div>
+      <div><h3>Contact</h3><a href="tel:+94786226320">+94 78 622 6320</a><a href="mailto:excellenceacademyorg@gmail.com">excellenceacademyorg@gmail.com</a><span>Trincomalee, Sri Lanka</span></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 Excellence Academy. All Rights Reserved.</span>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-button" href="https://wa.me/94786226320" target="_blank" rel="noopener" aria-label="Chat with Excellence Academy on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i><span>Chat with us</span>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="20"></circle><circle id="scrollProgress" cx="22" cy="22" r="20"></circle></svg>
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <button class="ai-launcher" id="aiLauncher" aria-label="Open Mentora AI Assistant">
+    <i class="fa-solid fa-robot"></i>
+    <span class="ai-launcher-label">Mentora</span>
+  </button>
+
+  <aside class="ai-chat" id="aiChat" aria-label="Mentora AI Assistant">
+    <div class="ai-header">
+      <div><span class="ai-avatar"><i class="fa-solid fa-robot"></i></span><span><strong class="mentora-name">Mentora</strong><small><i></i> AI Assistant • Online</small></span></div>
+      <button id="aiClose" aria-label="Close Mentora"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="ai-messages" id="aiMessages">
+      <div class="bot-message">Hello! I’m Mentora. I can help you explore courses, registration, and learning pathways.</div>
+    </div>
+    <div class="quick-prompts">
+      <button data-message="Recommend a course">Recommend a course</button>
+      <button data-message="How do I register?">How do I register?</button>
+    </div>
+    <form class="ai-input" id="aiForm">
+      <input id="aiInput" type="text" placeholder="Type your question..." aria-label="Ask a question" />
+      <button type="submit" aria-label="Send"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </aside>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
